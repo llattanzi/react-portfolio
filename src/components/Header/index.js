@@ -6,12 +6,13 @@ function Header({currentPage, handlePageChange}) {
 
     return (
         <header>
-            <h1>
-                <a href="/">Lauren Lattanzi</a>
-            </h1>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange}>
-            </Nav>
-            <section class="hero"></section>
+            <section class="hero">
+                <h1>
+                    <a href="/">Lauren Lattanzi</a>
+                </h1>
+                <Nav currentPage={currentPage} handlePageChange={handlePageChange}>
+                </Nav>
+            </section>
         </header>
     );
 }

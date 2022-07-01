@@ -26,7 +26,7 @@ function App() {
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       ></Header>
-      <main>
+      <main class="main-content">
         <div>
           {renderPage()}
         </div>
