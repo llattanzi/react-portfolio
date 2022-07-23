@@ -1,10 +1,11 @@
 import React from 'react';
+import headshot from '../../assets/images/headshot.jpg';
 
 function About() {
   return (
     <section>
       <h2 id="about-me">About Me</h2>
-      <img src="../../assets/images/headshot.jpg" alt="Headshot of Lauren looking fabulous" />
+      <img src={headshot} alt="Headshot of Lauren looking fabulous" />
       <div class="content-info">
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium distinctio enim dolorem excepturi maiores vero iusto, 
