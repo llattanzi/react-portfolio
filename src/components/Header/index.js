@@ -8,7 +8,7 @@ function Header({currentPage, handlePageChange}) {
         <header>
                 <Nav currentPage={currentPage} handlePageChange={handlePageChange}>
                 </Nav>
-            <section class="hero">
+            <section className="hero">
                 <h1>
                     <a href="/">Lauren Lattanzi</a>
                 </h1>

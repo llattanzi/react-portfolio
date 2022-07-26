@@ -5,38 +5,28 @@ import Project from './components/Project';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [currentPage, handlePageChange] = useState('About');
 
-  const renderPage = () => {
-    switch(currentPage) {
-      case "About":
-        return <About></About>
-      case "Portfolio":
-        return <Project></Project>
-      case "Resume":
-        return <Resume></Resume>
-      case "Contact":
-        return <ContactForm></ContactForm>
-    }
-  };
-
   return (
-    <div>
-      <Header
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      ></Header>
-      <main class="main-content">
-        <div>
-          {renderPage()}
-        </div>
-        <div>
-          <Footer/>
-        </div>
-      </main>
-    </div>
+      <Router>
+        <Header handlePageChange={handlePageChange} currentPage={currentPage}
+        ></Header>
+        <main className="main-content">
+          <Routes>
+            <Route path="/react-portfolio" element={<About />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Portfolio" element={<Project />} />
+            <Route path="/Resume" element={<Resume />} />
+            <Route path="/Contact" element={<ContactForm />} />
+          </Routes>
+          <div>
+            <Footer/>
+          </div>
+        </main>
+      </Router>
   );
 }
 

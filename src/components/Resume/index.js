@@ -24,7 +24,7 @@ const Resume = () => {
                 <li>MongoDB</li>
             </ul>
             {/* add resume download */}
-            <a>Download Resume</a>
+            <button>Download Resume</button>
         </div>
     );
 }

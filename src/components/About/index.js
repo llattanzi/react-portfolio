@@ -6,7 +6,7 @@ function About() {
     <section>
       <h2 id="about-me">About Me</h2>
       <img src={headshot} alt="Headshot of Lauren looking fabulous" />
-      <div class="content-info">
+      <div className="content-info">
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium distinctio enim dolorem excepturi maiores vero iusto, 
             quia illum unde tempore sunt necessitatibus nemo qui hic? Sit ipsam ab eius nobis.
