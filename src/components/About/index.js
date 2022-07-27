@@ -3,8 +3,7 @@ import headshot from '../../assets/images/headshot.jpg';
 
 function About() {
   return (
-    <section>
-      <h2 id="about-me">About Me</h2>
+    <section className='container'>
       <img src={headshot} alt="Headshot of Lauren looking fabulous" />
       <div className="content-info">
         <p>

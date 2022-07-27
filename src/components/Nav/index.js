@@ -17,24 +17,28 @@ function Nav() {
         navigate(`/${tabs[currentState]}`);
     };
 
-    // useEffect(() => {
-    //     console.log(currentTab);
-    //     navigate(`/${tabs[currentTab]}`);
-    // }, [currentTab, navigate])
-
     return (
-        <>
+        <div className='nav-tabs'>
             <Tabs 
             value={currentTab}
             onChange={renderPage}
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="inherit"
+            TabIndicatorProps={{
+                style: {
+                  backgroundColor: "#ffffff"
+                }
+            }}
             >
                 {tabs.map((tab, i) => (
-                    <Tab value={i} label={tab} key={tab} />
+                    <Tab 
+                    value={i} 
+                    label={tab} 
+                    key={tab} 
+                    className='tab'
+                    />
                  ))}
             </Tabs>
-        </>
+        </div>
     );
 }
 

@@ -3,7 +3,7 @@
 :root{
   --primary-color: #3d3836;
   --secondary-color: #e68b7b;
-  --tertiary-color: antiquewhite;
+  --tertiary-color: #FFFFFF;
 }
 
 * {
@@ -15,7 +15,7 @@
 body {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
-  font-family: Verdana, Arial, sans-serif;
+  font-family: 'EB Garamond', Verdana, Arial, sans-serif;
 }
 
 /* HEADER STYLING START */
@@ -23,33 +23,26 @@ header {
   justify-content: center;
 }
 
-header .nav {
-  width: 60%;
-}
-/* header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px 35px 20px 0;
-  background-color: var(--primary-color);
-  position: sticky;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-header h1 a {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 0 10px 0 80px;
-}
-
-header nav {
-  margin: 10px 0 0 0;
-} */
 /* END HEADER STYLES */
+
+/* NAV STYLES START */
+.nav-tabs {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  background-color: black;
+}
+
+.tab {
+  padding: 0 40px !important;
+  font-family: 'Bebas Neue' !important;
+  font-size: 200% !important;
+  color: var(--tertiary-color) !important;
+  cursor: pointer !important;
+}
+
+/* NAV STYLES END */
 
 /* HERO STYLING START */
 
@@ -64,24 +57,41 @@ header nav {
   margin: auto;
   width: 100%;
   height: 700px;
+  box-shadow: inset 0px 0px 50px 50px rgba(0,0,0,0.3);
+  
 }
 
 
 .hero h1 {
-  height: 40vh;
   right: 40px;
   padding: 5px;
+  font-weight: normal;
 }
 
 .hero a {
   margin: 0;
+  width: 100%;
   position: relative;
   top: 40%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: white;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 15vh;
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
 }
 
 .hero img {
@@ -302,10 +312,6 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
-}
-
-.navActive {
-  color: var(--secondary);
 }
 
 
