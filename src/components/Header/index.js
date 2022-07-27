@@ -1,13 +1,10 @@
 import React from 'react';
-import Nav from '../Nav';
 
-function Header({currentPage, handlePageChange}) {
+function Header() {
 
 
     return (
         <header>
-                <Nav currentPage={currentPage} handlePageChange={handlePageChange}>
-                </Nav>
             <section className="hero">
                 <h1>
                     <a href="/">Lauren Lattanzi</a>

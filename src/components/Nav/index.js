@@ -1,59 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Tab } from '@mui/material';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useAsyncState } from '../../utils/helpers';
 
-function Nav(props) {
+function Nav() {
     const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
+    const navigate = useNavigate();
 
-    const [currentTab, handleTabChange] = useState(0);
+    const [currentTab, handleTabChange] = useAsyncState(0);
 
-    // const renderPage = () => {
-    //     switch(currentTab) {
-    //       case "About":
-    //         return <About></About>
-    //       case "Portfolio":
-    //         return <Project></Project>
-    //       case "Resume":
-    //         return <Resume></Resume>
-    //       case "Contact":
-    //         return <ContactForm></ContactForm>
-    //     }
-    // };
+    const renderPage = async (event, value) => {
+        const currentState = await handleTabChange(value);
+        console.log(currentState);
+        console.log(tabs[currentState]);
+        navigate(`/${tabs[currentState]}`);
+    };
+
+    // useEffect(() => {
+    //     console.log(currentTab);
+    //     navigate(`/${tabs[currentTab]}`);
+    // }, [currentTab, navigate])
 
     return (
-        <div className="row">
-            <div className="col s12">
-                {/* <Tabs 
-                value={currentTab}
-                onChange={handleTabChange}
-                textColor="secondary"
-                indicatorColor="secondary"
-                aria-label="secondary tabs example"
-                className='nav'
-                > */}
-                    {tabs.map((tab, i) => (
-                        // <a
-                        // href={'#' + tab.toLowerCase()}
-                        // onClick={() => {props.handlePageChange(tab); setValue(tab)}}>
-                        
-                        // <Tab value={i} label={tab} key={tab}>
-                                                    <Link to={`/${tab}`} key={tab}>
-                            {/* <a
-                                href={'#' + tab.toLowerCase()}
-                                className={
-                                props.currentPage === tab ? 'nav-link active' : 'nav-link'
-                                }
-                            > */}
-                                {tab}
-                            {/* </a> */}
-                            </Link>
-                        // </Tab>
-                        // {/* </a> */}
-                    ))}
-                {/* </Tabs> */}
-            </div>
-        </div>
+        <>
+            <Tabs 
+            value={currentTab}
+            onChange={renderPage}
+            textColor="secondary"
+            indicatorColor="secondary"
+            >
+                {tabs.map((tab, i) => (
+                    <Tab value={i} label={tab} key={tab} />
+                 ))}
+            </Tabs>
+        </>
     );
 }
 

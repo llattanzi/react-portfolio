@@ -5,6 +5,7 @@ import Project from './components/Project';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Nav from './components/Nav';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
       <Router>
         <Header handlePageChange={handlePageChange} currentPage={currentPage}
         ></Header>
+        <Nav />
         <main className="main-content">
           <Routes>
+            <Route path="/" element={<About />} />
             <Route path="/react-portfolio" element={<About />} />
             <Route path="/About" element={<About />} />
             <Route path="/Portfolio" element={<Project />} />
