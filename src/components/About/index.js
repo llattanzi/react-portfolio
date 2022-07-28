@@ -1,13 +1,12 @@
 import React from 'react';
 import headshot from '../../assets/images/headshot.jpg';
 import Card from '@mui/material/Card';
-import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
 function About() {
   return (
-    <Card className='container' component='section' elevation='6'>
+    <Card className='container' component='section' elevation={6}>
       <CardMedia 
         component="img" 
         image={headshot} 

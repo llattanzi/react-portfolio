@@ -141,56 +141,14 @@ header {
 }
 
 /* work/projects section styling */
-.project {
-  margin: 8px 0;
-  background-size: cover;
-  background-position: center;
-  width: 49%;
-  height: 150px;
-  display: flex;
-  text-decoration: none;
-  color: var(--primary-color);
-  align-items: flex-end;
-  border: 3px solid var(--secondary-color);
-  opacity: 0.7;
+
+#project .content-info {
+  width: 60% !important;
 }
 
-.project:hover {
-  opacity: 1;
-}
-
-.project:first-child {
-  width: 100%;
-  height: 350px;
-  margin-top: 0;
-}
-
-#project-1 {
-  background-image: url("./assets/images/project-1.jpg");
-}
-
-#project-2 {
-  background-image: url("./assets/images/project-2.jpg");
-}
-
-#project-3 {
-  background-image: url("./assets/images/project-3.jpg");
-}
-
-#project-4 {
-  background-image: url("./assets/images/project-4.png");
-}
-
-#project-5 {
-  background-image: url("./assets/images/project-5.jpg");
-}
-
-.project-text {
-  background-color: var(--secondary-color);
-  padding: 8px;
-  position: relative;
-  height: auto;
-  bottom: 20px;
+.project-photo {
+  width: 40% !important;
+  height: 300px !important;
 }
 
 /* FOOTER */
@@ -346,74 +304,41 @@ button {
 
 
 @media screen and (max-width: 768px) {
-  header {
-      position: relative;
-      justify-content: center;
-      padding: 0 0 20px 0;
-  }
-  
-  header h1 {
-      width: 100%;
-      text-align: center;
-  }
-  
-  header h1 a {
-      padding: 0 10px;
-  }
 
   .hero {
-      justify-content: center;
-      padding: 10px 40px;
-      width: 100%;
+    justify-content: center;
+    padding: 10px 40px;
+    width: 100%;
+    height: 600px;
   }
 
-  .hero img {
-      border: none;
-      padding-bottom: 10px;
+  .hero h1 {
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    width: 80%;
   }
 
-  .hero h2 {
-      position: relative;
-      width: 100%;
-      text-align: center;
-      right: 0;
-      bottom: 0;
+  .hero a {
+    font-size: 12vh;
   }
 
   .main-content {
-    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .main-content section {
-      padding: 0 40px;
-  }
-
-  .main-content h2 {
-      width: 100%;
-  }
-
-  .content-info {
-      width: 100%;
-      padding: 20px 40px;
-      border-left: none;
-      border-top: 3px solid var(--primary-color);
+    width: 85%;
   }
 
   #contact-me {
-      padding: 0 20px;
+    padding: 0 20px;
   }
 
   #contact-me p {
-      padding: 20px 20px;
-      justify-content: space-around;
-  }
-
-  .project {
-      width: 49%;
-  }
-
-  .project:first-child {
-      height: 150px;
+    padding: 20px 20px;
+    justify-content: space-around;
   }
 }
 

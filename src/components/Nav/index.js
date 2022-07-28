@@ -1,14 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Tab } from '@mui/material';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useAsyncState } from '../../utils/helpers';
 
 function Nav() {
     const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
     const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location.pathname);
 
-    const [currentTab, handleTabChange] = useAsyncState(0);
+    let initialState;
+
+    switch (location.pathname) {
+        case "/Portfolio":
+            initialState = 1;
+            break
+        case "/Resume":
+            initialState = 2;
+            break
+        case "/Contact":
+            initialState = 3;
+            break
+        default:
+            initialState = 0;
+            break
+    }
+    console.log(initialState);
+
+    const [currentTab, handleTabChange] = useAsyncState(initialState);
 
     const renderPage = async (event, value) => {
         const currentState = await handleTabChange(value);
