@@ -208,15 +208,27 @@ footer {
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 footer a {
+  height: 100%;
+  display: flex;
   padding: 0 30px;
   text-decoration: none;
+}
+
+footer p {
+  padding: 10px 10px 0px 0px;
   color: var(--tertiary-color);
   font-family: 'Bebas Neue', Verdana, Arial, sans-serif;
   font-size: 20px;
+}
+
+.icons {
+  height: 40px !important;
+  padding-right: 10px;
+  width: auto !important;
 }
 
 /* ADDITIONAL STYLING */
