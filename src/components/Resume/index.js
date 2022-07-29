@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import DownloadIcon from '@mui/icons-material/Download';
+import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 
 const Resume = () => {
     return (

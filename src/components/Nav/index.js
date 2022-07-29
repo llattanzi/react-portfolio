@@ -43,6 +43,7 @@ function Nav() {
             value={currentTab}
             onChange={renderPage}
             textColor="inherit"
+            className="tab-list"
             TabIndicatorProps={{
                 style: {
                   backgroundColor: "#ffffff"

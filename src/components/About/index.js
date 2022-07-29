@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 
 function About() {
   return (
-    <Card className='container' component='section' elevation={6}>
+    <Card className='container about-me' component='section' elevation={6}>
       <CardMedia 
         component="img" 
         image={headshot} 
