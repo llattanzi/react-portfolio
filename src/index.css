@@ -153,8 +153,9 @@ header {
   width: 60% !important;
 }
 
-#project h2 {
+.container h2 {
   height: 40px;
+  color: var(--primary-color)
 }
 
 #project .container {
@@ -164,6 +165,7 @@ header {
 .project-photo {
   width: 40% !important;
   height: 100% !important;
+  border-right: 1px solid grey;
 }
 
 .container p {
