@@ -1,5 +1,6 @@
 import React from "react";
 import DownloadIcon from '@mui/icons-material/Download';
+import { Link } from 'react-router-dom';
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 import Button from '@mui/material/Button';
 
@@ -128,7 +129,7 @@ const Resume = () => {
                     </p>
                     <p>
                         <b>May 2018</b>
-                        <p>GPA: 3.7</p>
+                        GPA: 3.7
                     </p>
                 </div>
                 <div id='ed-2'>
@@ -152,7 +153,7 @@ const Resume = () => {
             </section>
             
             <div className='button-container'>
-                <a href='./resume.pdf' download='Lauren-Lattanzi-Resume.pdf'>
+                <Link to='./resume.pdf' target='_blank' download='Lauren-Lattanzi-Resume.pdf'>
                     <Button 
                         variant='contained' 
                         target="_blank"
@@ -162,7 +163,7 @@ const Resume = () => {
                         Download Resume
                         <DownloadIcon style={{ color: '#ffffff' }} className='icon-open'/>
                     </Button>
-                </a>
+                </Link>
             </div>
         </div>
     );
