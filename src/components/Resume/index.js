@@ -35,7 +35,7 @@ const Resume = () => {
                 </div>
                 <ul>
                     <li>
-                        Owned the development of complex ostomy leak detection and notification
+                        Owned the development and testing of complex data processing
                         algorithms in MATLAB for implementation in wearable medical device firmware.
                     </li>
                     <li>

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -37,8 +41,9 @@ function ContactForm() {
       
     // JSX
     return (
-        <section>
-            <h1>Contact me</h1>
+        <Card id='contact' component='section' elevation={6}>
+            <CardContent>
+            <h2>For any inquiries or business opportunities please reach out by completing the form below.</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -48,19 +53,31 @@ function ContactForm() {
                     <label htmlFor="email">Email address:</label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
                 </div>
-                <div>
+                <div id='contact-message'>
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" rows="5"  defaultValue={message} onBlur={handleChange}/>
                 </div>
-                {/* this is the same as if(errorMessage) { ... } conditional */}
+
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <div className='button-container'>
+                    <Button 
+                        variant='contained' 
+                        type='submit'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="button"
+                    >
+                        Submit Form
+                        <SendIcon style={{ color: '#ffffff' }} className='icon-open'/>
+                    </Button>
+                </div>
             </form>
-        </section>
+            </CardContent>
+        </Card>
     )
 }
     
