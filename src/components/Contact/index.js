@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
@@ -42,11 +43,13 @@ function ContactForm() {
     // JSX
     return (
         <Card id='contact' component='section' elevation={6}>
+            <div className='card-head'>
+                <h2>Let's get in touch!</h2>
+            </div>
             <CardContent>
-            <h2>For any inquiries or business opportunities please reach out by completing the form below.</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Full Name:</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
                 </div>
                 <div>
