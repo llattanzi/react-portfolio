@@ -200,6 +200,85 @@ header {
   width: auto !important;
 }
 
+/* RESUME STYLING START */
+#resume {
+  color: var(--secondary-color);
+  width: 85%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.resume-sections {
+  justify-content: end;
+}
+
+#details {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#details p {
+  width: 100%;
+}
+
+#resume h3 {
+  width: 20%;
+  min-width: 140px;
+}
+
+#resume .content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.title-date p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-date p:last-child {
+  text-align: right;
+}
+
+.title-date i, .title-date b {
+  width: 100%;
+}
+
+#resume ul {
+  width: 100%;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+#resume li {
+  width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+  list-style-type: disc;
+}
+
+#ed-2 {
+  width: 100% !important;
+}
+
+#ed-2 .title-date {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#skills {
+  text-align: left;
+}
+
+#resume .button-container {
+  padding-top: 20px !important;
+  justify-content: center !important;
+}
+
+/* RESUME STYLING END */
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -355,6 +434,15 @@ button {
     width: 85%;
   }
 
+  #project {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #resume section {
+    width: 100%;
+  }
+
 }
 
 
@@ -400,6 +488,28 @@ button {
   .headshot {
     width: 100% !important;
     height: 400px;
+  }
+
+  .project-photo {
+    width: 100% !important;
+    height: 300px !important ;
+  }
+
+  #project .content-info {
+    width: 100% !important;
+  }
+
+  #resume .content {
+    width: 100%;
+  }
+
+  #resume li {
+    width: 95%;
+  }
+
+  #resume h3 {
+    width: 100%;
+    padding-bottom: 10px;
   }
 
   #contact-me {
@@ -468,6 +578,15 @@ button {
 
   .about-me {
     width: 85% !important;
+  }
+
+  .content-info h2 {
+    width: 80%;
+  }
+
+  .button-container {
+    justify-content: center !important;
+    padding-top: 10px !important;
   }
   
   #contact-me {
