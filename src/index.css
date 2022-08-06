@@ -355,11 +355,18 @@ footer p {
   margin: auto;
 }
 
-form div {
+.form-elements {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form fieldset {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  border: none;
 }
 
 #contact-message {
@@ -369,6 +376,10 @@ form div {
 
 #contact-form .button-container {
   justify-content: center !important;
+}
+
+.error-text {
+  color: red;
 }
 
 input {
