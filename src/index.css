@@ -182,7 +182,7 @@ header {
   display: flex !important;
   justify-content: flex-end !important;
   padding: 0px 0 0 0 !important;
-  height: 50px !important;
+  /* height: 60px !important; */
 }
 
 .button {
@@ -192,6 +192,18 @@ header {
   text-transform: none !important;
   font-size: 18px !important;
   height: 50px !important;
+  margin: auto 0 !important;
+}
+
+.button-container .sample {
+  padding: 10px;
+  margin-right: 50px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.sample p {
+  padding: 0;
 }
 
 .icon-open {
@@ -436,6 +448,18 @@ button {
     width: 100%;
   }
 
+  .content-info h2 {
+    width: 50%;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+  }
+
+  .button-container .sample {
+    margin: 10px auto 20px auto;
+  }
+
   #resume section {
     width: 100%;
   }
@@ -583,6 +607,14 @@ button {
 
   .project {
     width: 100%;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+  }
+
+  .button-container .sample {
+    margin: 0 30px 20px 30px;
   }
 
   .about-me {

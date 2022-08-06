@@ -17,6 +17,8 @@ let projects = [
         "description2": "Users can create an account, create trip itineraries with friends, track expenses and split them at the end of their trip. Users can even offset the carbon emissions from their trip by donating to a charity, all through Roam.",
         "image": project1,
         "technologies": "MongoDb, Express.js, React, Node.js, Apollo-GraphQL, MUI, Stripe API",
+        "username": "Katlyn85",
+        "password": "otK5YtXpcalD1cm",
         "link": "https://pacific-depths-60618.herokuapp.com/"
     },
     {
@@ -69,12 +71,21 @@ function Project() {
                         <p>
                             {project.description1}
                         </p>
-                        <p>
-                            {project.description2}
-                        </p>
+                        {project.description2 && ( 
+                            <p>
+                                {project.description2}
+                            </p>
+                        )}
                         <h4>Technologies Used:</h4>
                         <p>{project.technologies}</p>
                     <div className='button-container'>
+                        {project.username && ( 
+                            <div className='sample'>
+                                <h4>Sample log in details:</h4>
+                                <p><b>Username:</b> {project.username}</p>
+                                <p>Password: {project.password}</p>
+                            </div>
+                        )}
                         <Button 
                             variant='contained' 
                             href={project.link}
