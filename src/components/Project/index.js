@@ -83,7 +83,7 @@ function Project() {
                             <div className='sample'>
                                 <h4>Sample log in details:</h4>
                                 <p><b>Username:</b> {project.username}</p>
-                                <p>Password: {project.password}</p>
+                                <p><b>Password:</b> {project.password}</p>
                             </div>
                         )}
                         <Button 
