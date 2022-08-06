@@ -662,7 +662,7 @@ button {
     width: 80%;
   }
 
-  form div {
+  form fieldset {
     width: 100%;
   }
 }
