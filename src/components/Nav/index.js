@@ -8,7 +8,6 @@ function Nav() {
     const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location.pathname);
 
     let initialState;
 
@@ -26,14 +25,11 @@ function Nav() {
             initialState = 0;
             break
     }
-    console.log(initialState);
 
     const [currentTab, handleTabChange] = useAsyncState(initialState);
 
     const renderPage = async (event, value) => {
         const currentState = await handleTabChange(value);
-        console.log(currentState);
-        console.log(tabs[currentState]);
         navigate(`/${tabs[currentState]}`);
     };
 

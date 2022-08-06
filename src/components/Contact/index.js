@@ -14,7 +14,6 @@ function ContactForm() {
         // name property here actually refers to the name of the target rather than the name input
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-            console.log(isValid);
             // isValid conditional statement
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
