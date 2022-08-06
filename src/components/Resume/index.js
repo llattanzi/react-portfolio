@@ -153,7 +153,7 @@ const Resume = () => {
             </section>
             
             <div className='button-container'>
-                <Link to='./assets/resume.pdf' target='_blank' download='Lauren-Lattanzi-Resume.pdf'>
+                <Link to='%PUBLIC_URL%/assets/resume.pdf' target='_blank' download='Lauren-Lattanzi-Resume.pdf'>
                     <Button 
                         variant='contained' 
                         target="_blank"
