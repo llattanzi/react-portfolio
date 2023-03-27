@@ -212,10 +212,35 @@ const Resume = () => {
                             <p>Grade: 100</p>
                         </p>
                     </div>
+                    <div id='ed-info' class='title-date content'>
+                        <p>
+                            Completed an intensive coding program that teaches industry leading front end and
+                            back end technologies to become a full stack web developer. The program focuses
+                            on the following topics:
+                        </p>
+                        <ul>
+                            <li>
+                                JavaScript computer science - algorithms and data structures
+                            </li>
+                            <li>
+                                Browser-based technologies - HTML/CSS, jQuery, responsive design,
+                                bootstrap, handlebars, local and session storage, indexedDB, and React
+                            </li>
+                            <li>
+                                Databases - MySQL, MongoDB, NoSQL, and Apollo-GraphQL
+                            </li>
+                            <li>
+                                Server side development - User auth, PWAs, and MERN stack
+                            </li>
+                            <li>
+                                API interaction - CRUD methods, RESTful development
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <h3>LANGUAGES:</h3>
                 <div className='title-date content'>
-                    <p>
+                    <p id='languages'>
                         JavaScript, TypeScript, PHP, Kotlin, HTML, CSS, MATLAB
                     </p>
                 </div>

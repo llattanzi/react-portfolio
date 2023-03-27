@@ -281,7 +281,21 @@ header {
   margin-left: auto;
 }
 
-#skills {
+#ed-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ed-info ul {
+  padding: 10px 0 0 25px;
+}
+
+#ed-info li {
+  width: 100%;
+}
+
+#skills, #languages {
   text-align: left;
 }
 
