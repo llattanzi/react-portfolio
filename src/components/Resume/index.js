@@ -9,10 +9,10 @@ const Resume = () => {
         <div id='resume'>
             <h2>Lauren M. Lattanzi</h2>
             <section id='details'>
-                <p>Email: Llattan@ncsu.edu</p>
+                <p>Email: Llattanzi714@gmail.com</p>
                 <p>Phone: (631) 235-8775</p>
-                <p> 120 Saint Albans Dr., Apt 781</p>
-                <p>Raleigh, NC 27609</p>
+                <p>805 Ambergate Sta.</p>
+                <p>Apex, NC 27502</p>
             </section>
             <section className='resume-sections'>
                 <h3>OBJECTIVE:</h3>
@@ -25,11 +25,80 @@ const Resume = () => {
                 <h3>EXPERIENCE:</h3>
                 <div className='title-date content'>
                     <p>
+                        <b>Software Engineer</b>
+                        <i>Ultralinq Healthcare Solutions</i>
+                    </p>
+                    <p>
+                        <b>Sept 2022 - Present</b>
+                        <i>Morrisville, North Carolina</i>
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        Responsible for new feature development and bug fixes for both the front and back
+                        end of the web application.
+                    </li>
+                    <li>
+                        Part of a team focusing on converting much of the current PHP backend to a
+                        separate Kotlin application.
+                    </li>
+                    <li>
+                        Fixing bugs and addressing user concerns and new feature requests with existing
+                        PHP and HTML/JS legacy code.
+                    </li>
+                    <li>
+                        Restructured the legacy user auth process to facilitate AWS Cognito and SSO
+                        implementation.
+                    </li>
+                    <li>
+                        Following provided OpenAPI documentation and communicating with the UI
+                        developers to create REST APIs that suit their requirements and desired format.
+                    </li>
+                    <li>
+                        Building REST APIs in Kotlin with Spring Boot and JPA along with Hibernate and
+                        Javax validation. Writing unit tests in Spring Boot for all controllers and services.
+                    </li>
+                    <li>
+                        Working with AWS to upload and retrieve media files from S3 and debug various
+                        servers with CloudWatch.
+                    </li>
+                    <li>
+                        Following agile development practices with Jira, Confluence, and Bitbucket.
+                    </li>
+                </ul>
+                <div className='title-date content'>
+                    <p>
+                        <b>Full-stack Web Developer</b>
+                        <i>Paperless Fundraisers LLC</i>
+                    </p>
+                    <p>
+                        <b>Aug 2022 - Oct 2022</b>
+                        <i>Remote - Part Time Contracting</i>
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        Developed front and back end features of an e-commerce website for fundraisers
+                        using TypeScript, Next.js, React, Redux, Prisma, Supabase, and Material UI.
+                    </li>
+                    <li>
+                        Created API routes and CRUD calls to communicate between the React side of the
+                        app and the database with information regarding sales, employees, customers,
+                        orders, products, and companies.
+                    </li>
+                    <li>
+                        Designed and implemented functional UIs for several pages in React with Material
+                        UI components for capturing user input and displaying data retrieved from internal
+                        and external APIs.
+                    </li>
+                </ul>
+                <div className='title-date content'>
+                    <p>
                         <b>R&D Engineer</b>
                         <i>Blur Product Development</i>
                     </p>
                     <p>
-                        <b>September 2018 - Present</b>
+                        <b>Sept 2018 - Sept 2022</b>
                         <i>Cary, North Carolina</i>
                     </p>
                 </div>
@@ -69,7 +138,7 @@ const Resume = () => {
                         <b>Roam</b>
                     </p>
                     <p>
-                        <b>July 2022 - Present</b>
+                        <b>July 2022 - Aug 2022</b>
                     </p>
                 </div>
                 <ul>
@@ -139,15 +208,24 @@ const Resume = () => {
                             <i>UNC Chapel Hill</i>
                         </p>
                         <p>
-                            <b>February 2022 – July 2022</b>
+                            <b>Feb 2022 – July 2022</b>
+                            <p>Grade: 100</p>
                         </p>
                     </div>
+                </div>
+                <h3>LANGUAGES:</h3>
+                <div className='title-date content'>
+                    <p>
+                        JavaScript, TypeScript, PHP, Kotlin, HTML, CSS, MATLAB
+                    </p>
                 </div>
                 <h3>TECHNICAL SKILLS:</h3>
                 <div className='title-date content'>
                     <p id='skills'>
-                        JavaScript, HTML, CSS, Node.js, MERN Stack, Apollo-GraphQL, SQL, jQuery,
-                        Responsive Design, Git, Agile Development, Jira, MATLAB
+                        Spring Boot, Java Persistence API, Node.js, Next.js, React, Redux, MongoDB,
+                        Express.js, Apollo-GraphQL, SQL, jQuery, Responsive Design, AWS, Unit Testing,
+                        Hibernate and Javax validation, IntelliJ IDEA, VS Code, DataGrip, Docker, Git,
+                        Atlassian Stack, Agile Development
                     </p>
                 </div>
             </section>
