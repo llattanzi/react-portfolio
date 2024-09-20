@@ -295,8 +295,8 @@ header {
   width: 100%;
 }
 
-#skills, #languages {
-  text-align: left;
+.skills {
+  text-align: left !important;
 }
 
 #resume .button-container {

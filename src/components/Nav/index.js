@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Tab } from '@mui/material';
 import { useNavigate, useLocation } from "react-router-dom";
@@ -28,7 +28,7 @@ function Nav() {
 
     const [currentTab, handleTabChange] = useAsyncState(initialState);
 
-    const renderPage = async (event, value) => {
+    const renderPage = async (_event, value) => {
         const currentState = await handleTabChange(value);
         navigate(`/${tabs[currentState]}`);
     };
